@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,6 +69,11 @@ export default function App() {
           </div>
         </div>
       </main>
+      <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <Dashboard />
     </div>
+    </div>
+    
   );
 }
