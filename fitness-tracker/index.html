@@ -4,14 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fitness Tracker</title>
-  <link rel="stylesheet" href="./dist/output.css" />
+  <link href="dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="p-4 bg-blue-600 text-white text-center">
-    <h1 class="text-2xl font-bold">Fitness Tracker</h1>
+<body class="bg-gray-100 text-gray-800">
+  
+  <!-- Header -->
+  <header class="flex items-center justify-between bg-white shadow px-4 py-3">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="images/logo.png" alt="Logo" class="w-8 h-8">
+      <h1 class="text-lg font-bold">FitTrack</h1>
+    </div>
+
+    <!-- Toggle Button -->
+    <button id="menuToggle" class="p-2 bg-gray-200 rounded-lg hover:bg-gray-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Profile -->
+    <div class="flex items-center gap-2">
+      <img src="images/profile.jpg" alt="Profile" class="w-8 h-8 rounded-full border">
+      <span class="hidden sm:block font-medium">Abdulrahman</span>
+    </div>
   </header>
+
+  <!-- Main content -->
   <main class="p-4">
-    <p class="text-lg">Welcome to your fitness journey!</p>
+    <!-- Example UI sections -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Today's Stats</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-500">Steps</p>
+          <p class="text-2xl font-bold">7,542</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-500">Calories</p>
+          <p class="text-2xl font-bold">560</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add more sections as per your UI -->
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Workout Plan</h2>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p>Push-ups, squats, plank…</p>
+      </div>
+    </section>
   </main>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    menuToggle.addEventListener('click', () => {
+      alert('Toggle button clicked! Implement menu logic here.');
+    });
+  </script>
+
 </body>
 </html>
