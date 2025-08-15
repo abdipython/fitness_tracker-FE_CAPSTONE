@@ -4,7 +4,9 @@ export default function Tracker() {
   const days = ["M", "T", "W", "T", "F", "S", "S"];
   return (
     <div className="bg-blue-900 rounded-xl p-4 text-white mt-6">
-      <h2 className="text-lg font-semibold mb-4">Tracker</h2>
+      <h2 className="text-lg md:text-xl font-semibold mb-4">TRACKER</h2>
+
+      {/* Days */}
       <div className="flex gap-2 mb-4">
         {days.map((day, i) => (
           <div
@@ -18,21 +20,31 @@ export default function Tracker() {
         ))}
       </div>
 
-      <div className="mb-2">Calories <span className="float-right">700 kcal</span></div>
+      {/* Calories */}
+      <div className="mb-2 text-sm md:text-base">
+        CALORIES <span className="float-right">750</span>
+      </div>
       <div className="bg-blue-700 rounded-full h-2 mb-4">
         <div className="bg-green-400 h-2 rounded-full w-3/4"></div>
       </div>
 
-      <div className="mb-2">Workouts <span className="float-right">3 / 5</span></div>
+      {/* Workouts */}
+      <div className="mb-2 text-sm md:text-base">
+        WORKOUTS <span className="float-right">4</span>
+      </div>
       <div className="bg-blue-700 rounded-full h-2 mb-4">
-        <div className="bg-green-400 h-2 rounded-full w-3/5"></div>
+        <div className="bg-green-400 h-2 rounded-full w-4/5"></div>
       </div>
 
-      <div className="mb-2">BMI <span className="float-right">Underweight</span></div>
+      {/* BMI */}
+      <div className="mb-2 text-sm md:text-base">
+        BMI <span className="float-right">23</span>
+      </div>
       <div className="bg-blue-700 rounded-full h-2">
-        <div className="bg-green-400 h-2 rounded-full w-2/6"></div>
+        <div className="bg-green-400 h-2 rounded-full w-2/5"></div>
       </div>
     </div>
   );
 }
+
 

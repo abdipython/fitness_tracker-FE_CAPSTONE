@@ -3,10 +3,10 @@ import CategoryCard from "./CategoryCard";
 
 export default function WorkoutCategories() {
   const categories = [
-    { title: "Upper Body", icon: "/upperbody.png" },
-    { title: "Lower Body", icon: "/lowerbody.png" },
-    { title: "Core", icon: "/core.png" },
-    { title: "Yoga", icon: "/yoga.png" },
+    { title: "upper body", icon: "/upperbody.png" },
+    { title: "yoga", icon: "/yoga.png" },
+    { title: "core", icon: "/core.png" },
+    { title: "lower body", icon: "/lowerbody.png" },
   ];
 
   return (
