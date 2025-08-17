@@ -6,7 +6,6 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center p-4 relative">
-      {/* Left - Hamburger on mobile */}
       <div className="flex items-center gap-2">
         <button
           className="md:hidden text-white"
@@ -18,21 +17,18 @@ export default function Navbar() {
         <span className="text-white font-semibold text-lg">FE.FIT</span>
       </div>
 
-      {/* Center - Desktop menu */}
       <div className="hidden md:flex gap-6 text-white">
         <a href="#">Home</a>
         <a href="#">Tracker</a>
         <a href="#">Workout</a>
       </div>
 
-      {/* Right - Profile image */}
       <img
         src="/profile.jpg"
         alt="Profile"
         className="w-10 h-10 rounded-full border border-white"
       />
 
-      {/* Mobile menu dropdown */}
       {open && (
         <div className="absolute top-16 left-0 w-full bg-blue-800 flex flex-col items-center py-4 md:hidden">
           <a href="#" className="py-2 text-white">Home</a>

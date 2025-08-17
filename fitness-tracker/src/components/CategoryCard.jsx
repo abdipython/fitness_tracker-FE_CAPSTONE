@@ -8,3 +8,4 @@ export default function CategoryCard({ title, icon }) {
     </div>
   );
 }
+
