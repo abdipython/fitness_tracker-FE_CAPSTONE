@@ -1,19 +1,19 @@
-import React from "react";
 import Navbar from "./components/Navbar";
-import WorkoutCategories from "./components/WorkoutCategories";
-import Tracker from "./components/Tracker";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-700 to-blue-500">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="px-4 text-white">
-        <h1 className="text-2xl md:text-3xl font-bold">Hi Alex,</h1>
-        <p className="text-lg mb-6">Ready for today’s workout?</p>
-        <WorkoutCategories />
-        <Tracker />
-      </div>
+      <main className="flex-1">
+        <Hero />
+        <Features />
+      </main>
+      <Footer />
     </div>
   );
 }
 
+export default App;
