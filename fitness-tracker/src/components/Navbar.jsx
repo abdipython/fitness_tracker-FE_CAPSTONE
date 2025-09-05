@@ -1,21 +1,26 @@
+import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-8 py-4">
-      <div className="flex items-center space-x-2">
-        <img src="/logo.png" alt="FE.FIT" className="w-8 h-8" />
-        <span className="font-bold text-xl">FE.FIT</span>
+    <nav className="flex items-center justify-between p-4 bg-blue-900">
+      <button className="md:hidden">
+        <Menu className="w-6 h-6" />
+      </button>
+      <h1 className="text-2xl font-bold flex items-center gap-2">
+        🏃 FE.FIT
+      </h1>
+      <div className="hidden md:flex gap-6">
+        <Link to="/">Dashboard</Link>
+        <Link to="/tracker">Tracker</Link>
+        <Link to="/plan">Plan</Link>
+        <Link to="/recommendations">Recommendations</Link>
+        <Link to="/preferences">Preferences</Link>
       </div>
-
-      <ul className="flex space-x-8">
-        <li><a href="#" className="hover:text-gray-300">Home</a></li>
-        <li><a href="#" className="hover:text-gray-300">Tracker</a></li>
-        <li><a href="#" className="hover:text-gray-300">Workout</a></li>
-      </ul>
-
       <img
-        src="/profile.jpg"
-        alt="Profile"
-        className="w-10 h-10 rounded-full border-2 border-white"
+        src="https://i.pravatar.cc/40"
+        alt="user"
+        className="rounded-full w-10 h-10"
       />
     </nav>
   );
