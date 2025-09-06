@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-center py-4">
-      <p className="text-sm">© 2025 FE.FIT. All rights reserved.</p>
+    <footer className="bg-blue-950 text-center py-6 shadow-inner">
+      <p className="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200 cursor-pointer">
+        © 2025 <span className="font-bold text-white">FE.FIT</span>. All rights reserved.
+      </p>
     </footer>
   );
 }
