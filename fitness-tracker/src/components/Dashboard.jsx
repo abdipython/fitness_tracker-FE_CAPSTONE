@@ -3,7 +3,7 @@ import ProgressChart from "./ProgressChart";
 export default function Dashboard() {
   return (
     <div className="space-y-6">
-      {/* Workout Categories */}
+      
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-gradient-to-b from-blue-800 to-blue-900 p-6 rounded-xl text-center shadow-md hover:scale-105 transform transition">
           <span className="text-4xl">🏋️</span>
@@ -19,7 +19,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Tracker */}
+     
       <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 p-6 rounded-2xl shadow-lg">
         <h2 className="text-xl font-bold text-center mb-4 text-blue-200">
           TRACKER
@@ -68,7 +68,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Charts */}
+
       <div className="bg-gradient-to-b from-blue-800 to-blue-900 p-6 rounded-2xl shadow-lg">
         <h3 className="text-lg font-bold text-blue-200 mb-4">Progress Chart</h3>
         <ProgressChart />
